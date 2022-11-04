@@ -51,10 +51,10 @@ keymap.set("n", "<leader>gs", "<cmd>Telescope git_status<cr>") -- list current c
 keymap.set("n", "<leader>rs", ":LspRestart<CR>") -- mapping to restart lsp if necessary
 
 -- bufferline
-vim.keymap.set("n", "pt", "<CMD>BufferLinePick<CR>")
-vim.keymap.set("n", "<leader>ts", "<CMD>BufferLinePickClose<CR>")
-vim.keymap.set("n", "<S-l>", "<CMD>BufferLineCycleNext<CR>")
-vim.keymap.set("n", "<S-h>", "<CMD>BufferLineCyclePrev<CR>")
-vim.keymap.set("n", "]b", "<CMD>BufferLineMoveNext<CR>")
-vim.keymap.set("n", "[b", "<CMD>BufferLineMovePrev<CR>")
-vim.keymap.set("n", "gs", "<CMD>BufferLineSortByDirectory<CR>")
+keymap.set("n", "pt", "<CMD>BufferLinePick<CR>")
+keymap.set("n", "<leader>ct", "<CMD>BufferLinePickClose<CR>")
+keymap.set("n", "<S-l>", "<CMD>BufferLineCycleNext<CR>")
+keymap.set("n", "<S-h>", "<CMD>BufferLineCyclePrev<CR>")
+keymap.set("n", "]b", "<CMD>BufferLineMoveNext<CR>")
+keymap.set("n", "[b", "<CMD>BufferLineMovePrev<CR>")
+keymap.set("n", "gs", "<CMD>BufferLineSortByDirectory<CR>")
