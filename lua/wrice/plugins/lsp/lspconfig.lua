@@ -161,7 +161,7 @@ lspconfig["intelephense"].setup({
 				"polylang-stubs",
 			},
 			environment = {
-				includePaths = { "/home/wrice/.composer/vendor/php-stubs/", "/home/mte90/.composer/vendor/wpsyntex/" },
+				includePaths = { "/home/law/.composer/vendor/php-stubs/", "/home/mte90/.composer/vendor/wpsyntex/" },
 			},
 			files = {
 				maxSize = 5000000,
@@ -170,4 +170,27 @@ lspconfig["intelephense"].setup({
 	},
 	capabilities = capabilities,
 	on_attach = on_attach,
+})
+
+lspconfig["rust_analyzer"].setup({
+	on_attach = on_attach,
+	capabilities = capabilities,
+	settings = {
+		["rust-analyzer"] = {
+			imports = {
+				granularity = {
+					group = "module",
+				},
+				prefix = "self",
+			},
+			cargo = {
+				buildScripts = {
+					enable = true,
+				},
+			},
+			procMacro = {
+				enable = true,
+			},
+		},
+	},
 })

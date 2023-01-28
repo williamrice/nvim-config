@@ -40,6 +40,7 @@ keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>") -- find string in 
 keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>") -- find string under cursor in current working directory
 keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>") -- list open buffers in current neovim instance
 keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>") -- list available help tags
+keymap.set("n", "<leader>fk", "<cmd>Telescope keymaps<cr>")  -- list keymapping
 
 -- telescope git commands
 keymap.set("n", "<leader>gc", "<cmd>Telescope git_commits<cr>") -- list all git commits (use <cr> to checkout) ["gc" for git commits]
@@ -51,10 +52,11 @@ keymap.set("n", "<leader>gs", "<cmd>Telescope git_status<cr>") -- list current c
 keymap.set("n", "<leader>rs", ":LspRestart<CR>") -- mapping to restart lsp if necessary
 
 -- bufferline
-keymap.set("n", "pt", "<CMD>BufferLinePick<CR>")
-keymap.set("n", "<leader>ct", "<CMD>BufferLinePickClose<CR>")
+keymap.set("n", "<leader>q", ":bd<CR>")
+keymap.set("n", "tp", "<CMD>BufferLinePick<CR>")
+keymap.set("n", "<leader>tc", "<CMD>BufferLinePickClose<CR>")
 keymap.set("n", "<S-l>", "<CMD>BufferLineCycleNext<CR>")
 keymap.set("n", "<S-h>", "<CMD>BufferLineCyclePrev<CR>")
-keymap.set("n", "]b", "<CMD>BufferLineMoveNext<CR>")
-keymap.set("n", "[b", "<CMD>BufferLineMovePrev<CR>")
-keymap.set("n", "gs", "<CMD>BufferLineSortByDirectory<CR>")
+keymap.set("n", "<S-]>", "<CMD>BufferLineMoveNext<CR>")
+keymap.set("n", "<S-[>", "<CMD>BufferLineMovePrev<CR>")
+keymap.set("n", "ts", "<CMD>BufferLineSortByDirectory<CR>")
