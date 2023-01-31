@@ -27,9 +27,9 @@ bufferline.setup({
 				return ""
 			end
 			if level:match("error") then
-				return " " .. (vim.g.diagnostic_icons.Error or " ")
+				return ""
 			elseif level:match("warning") then
-        return " " .. ( vim.g.diagnostic_icons.Warning or " ")
+        return ""
       end
 			return ""
 		end,
